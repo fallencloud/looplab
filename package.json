@@ -1,0 +1,15 @@
+{
+  "name": "LoopLAB",
+  "version": "1.0.0",
+  "description": "A social media landing page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "keywords": [],
+  "author": "Sharina V. Jones",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
