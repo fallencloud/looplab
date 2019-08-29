@@ -22,6 +22,9 @@ a {
 ul {
   list-style: none; }
 
+img {
+  max-width: 100%; }
+
 /***********************
 Utilities
 ************************/
@@ -30,7 +33,13 @@ Utilities
   color: #fff; }
 
 .container {
-  margin: auto; }
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden; }
+
+.m-1 {
+  margin: 1.15rem; }
 
 .p-1 {
   padding: 1.15rem; }
@@ -41,16 +50,68 @@ Utilities
 .px-1 {
   padding: 0 1.15rem; }
 
+.display-1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: lighter; }
+
 /***********************
 Navbar
 ************************/
 #navbar {
   display: flex;
-  justify-content: space-between; }
-  #navbar ul li {
-    display: inline-block;
-    padding-right: 1rem; }
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  z-index: 1;
+  border-bottom: 5px #007bff solid; }
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none; }
     #navbar ul li a {
+      color: #fff;
+      padding: 0.75rem;
+      margin: 0 0.25rem; }
+
+/***********************
+Social
+************************/
+#social {
+  display: flex;
+  flex-direction: row;
+  background: url("../img/home.jpg") no-repeat center center/cover;
+  padding: 5rem;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  overflow: hidden; }
+  #social .social {
+    margin: 1.15rem;
+    height: 100%;
+    flex: 2;
+    color: #fff; }
+    #social .social h1 {
+      margin-bottom: 1.15rem;
       color: #fff; }
-  #navbar ul li:last-child {
-    padding-right: 0; }
+    #social .social ul li {
+      display: flex;
+      padding: 2rem; }
+      #social .social ul li i {
+        padding: 0.5rem;
+        background: #fff;
+        color: #007bff;
+        margin-right: 2rem;
+        border-radius: 5px;
+        align-self: flex-start; }
+      #social .social ul li p {
+        font-size: 1.3rem;
+        align-self: flex-end; }
+  #social .signup {
+    flex: 1;
+    margin: 1.15rem;
+    background: #007bff;
+    color: #fff; }
