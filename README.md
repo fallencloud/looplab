@@ -4,7 +4,7 @@
 
 In this project, I build the LoopLAB interface from Traversy's Bootstrap 4 From Scratch course using only HTML and CSS.
 
-View live: Coming Soon.
+View live: https://fallencloud.github.io/looplab/
 
 ### Features
 
