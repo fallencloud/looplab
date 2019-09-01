@@ -37,6 +37,11 @@ Utilities
 $primary: #007bff;
 $dark: #343a40;
 $white: #fff;
+$gray: #6c757d;
+
+.text-center {
+  text-align: center;
+}
 
 .bg-dark {
   background: $dark;
@@ -64,6 +69,10 @@ $white: #fff;
   padding: 1.15rem 0;
 }
 
+.py-2 {
+  padding: 2rem 0;
+}
+
 .px-1 {
   padding: 0 1.15rem;
 }
@@ -73,6 +82,36 @@ $white: #fff;
   line-height: 3rem;
   font-weight: lighter;
 }
+
+.btn {
+  border: 1px solid $white;
+  background: $primary;
+  color: $white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #f8f9fa;
+  color: $dark;
+}
+
+.btn-dark {
+  background: $dark;
+  color: $gray;
+  border-color: $gray;
+
+  &:hover {
+    background: $gray;
+    color: $white;
+    border: none;
+  }
+}
+
+.btn-wide {
+  width: 100%;
+}
+
 /***********************
 Navbar
 ************************/
@@ -108,14 +147,6 @@ Social
   background: url('../img/home.jpg') no-repeat center center/cover;
   padding: 5rem;
   min-height: 100vh;
-
-  // overlay
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  background-color: rgba(0, 0, 0, 0.9) !important;
 
   overflow: hidden;
 
@@ -157,5 +188,75 @@ Social
     margin: 1.15rem;
     background: $primary;
     color: $white;
+
+    form {
+      margin: auto;
+      padding: 2rem 1rem;
+
+      h3,
+      p {
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+
+      .form-group {
+        padding: 1rem 0;
+
+        input {
+          display: block;
+          background: #f8f9fa;
+          padding: 1rem;
+          border-radius: 5px;
+          width: 100%;
+          border: 0;
+          font-size: 1.15rem;
+        }
+      }
+    }
+
+    .btn {
+      font-size: 1.15rem;
+    }
+  }
+}
+
+#explore {
+  .explore-header {
+    background: $dark;
+    color: $white;
+    padding: 3rem 0;
+
+    p {
+      margin-bottom: 1.15rem;
+    }
+  }
+
+  .explore-content {
+    display: flex;
+
+    .explore-img {
+      flex: 1;
+      margin-right: 2rem;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+        height: auto;
+      }
+    }
+
+    .explore-text {
+      flex: 1;
+      color: $gray;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
